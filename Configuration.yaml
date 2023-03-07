@@ -1,4 +1,4 @@
-external-controller: :9090
+external-controller: "0.0.0.0:9090"
 proxies:
   - {
       name: 🇺🇸 美国 V2CROSS.COM 1,
@@ -695,7 +695,116 @@ proxies:
       ws-opts: { path: /, headers: { Host: jp6.linkeden.co } },
       udp: true,
     }
+  - {
+      name: 01.公益节点限速,
+      type: vmess,
+      server: 01.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: fs.appls.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: fs.appls.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: fs.appls.eu.org },
+    }
+  - {
+      name: 02.付费速度更快,
+      type: vmess,
+      server: 02.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: fs.appls.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: fs.appls.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: fs.appls.eu.org },
+    }
+  - {
+      name: 03.公益节点不稳定,
+      type: vmess,
+      server: 03.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: fs.appls.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: fs.appls.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: fs.appls.eu.org },
+    }
+  - {
+      name: 04.公益节点,
+      type: vmess,
+      server: 04.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: fs.appls.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: fs.appls.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: fs.appls.eu.org },
+    }
+  - {
+      name: 05.公益节点,
+      type: vmess,
+      server: g01.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: gc01.appls.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: gc01.appls.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: gc01.appls.eu.org },
+    }
+  - {
+      name: 06.公益节点,
+      type: vmess,
+      server: g02.kxnn.eu.org,
+      port: 443,
+      uuid: 300cdca6-5632-4fcf-8975-e402c8e53bd6,
+      alterId: 0,
+      cipher: auto,
+      udp: true,
+      tls: true,
+      servername: ls.imghub.eu.org,
+      network: ws,
+      ws-opts:
+        { path: /D26xvdqUdCpvvPTz4R, headers: { Host: ls.imghub.eu.org } },
+      ws-path: /D26xvdqUdCpvvPTz4R,
+      ws-headers: { Host: ls.imghub.eu.org },
+    }
+
 nodeList: &NodeList
+  - 01.公益节点限速
+  - 02.付费速度更快
+  - 03.公益节点不稳定
+  - 04.公益节点
+  - 05.公益节点
+  - 06.公益节点
   - 🇺🇸 美国 V2CROSS.COM 1
   - 🇺🇸 美国 V2CROSS.COM 2
   - 🇺🇸 美国 V2CROSS.COM 3
